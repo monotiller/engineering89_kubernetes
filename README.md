@@ -1,5 +1,4 @@
 # Introduction to K8
-Diagram not yet completed!
 ## What is K8
 - Large scale orchestration tool used to control a large number of containers
 - Allows you to build in damage control options too (such as self healing)
@@ -12,6 +11,7 @@ Diagram not yet completed!
 
 ## Why should we use
 ![](images/image1.png)
+
 If you're used to tools like Docker containers but want to scale up from there then K8 is a good tool for that. It gives you methods to also group containers in sets, more robust scheduling tools with pods and you can also deploy nodes which can be used to submanage containers on your behalf
 
 # Use cases
@@ -36,3 +36,33 @@ If you're used to tools like Docker containers but want to scale up from there t
 ## What is the difference between K8 managed service and non managed K8 services
 - If you decide not to manage with K8 you will have to manage with your providers own tools
 - This will mean having to learn a new set of tools for each provider or in some cases, building your own
+
+## Diagram
+⚠️Goes here
+
+Ensure all ports are available that we will be using to deploy our app: `3000`, `80` and `27017`
+
+### Task
+- Create a K8 deployment file called `nginx-deployment.yml`
+- Use default nginx docker image in our first iteration
+- We will create 2 replicas of this deployment
+- `kubectl create -f file-name.yml`
+
+### K8 deployment with 2 replicas/pods
+⬇️
+```yaml
+selector: nginx
+```
+⬇️
+
+For your deployment to launch publicly we need create a `nginx_service.yml` to connect with deployment to see it working globally
+
+### `LoadBalancer`
+What is a load balancer?
+## K8 commands
+- `kubectl get [name of resource]`
+  - `kubectl get avc`
+  - `kubectl get node`
+  - `kubectl get pods`
+    - `kubectl describe pod`
+- `kubectl delete deployments nginx-deployment `
