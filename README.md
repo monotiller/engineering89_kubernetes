@@ -11,6 +11,7 @@ Diagram not yet completed!
 - Horizontal scaling: scales application up and down quickly either manually or automatically
 
 ## Why should we use
+![](images/image1.png)
 If you're used to tools like Docker containers but want to scale up from there then K8 is a good tool for that. It gives you methods to also group containers in sets, more robust scheduling tools with pods and you can also deploy nodes which can be used to submanage containers on your behalf
 
 # Use cases
