@@ -14,14 +14,14 @@ spec:
     spec:
       containers:
         - name: node
-          image: monotiller/eng89_node_app
+          image: ahskhan/eng89_node_prod
           ports:
             - containerPort: 3000
-          env:
-            - name: DB_HOST
-              value: mongodb://mongo:27017/posts
-          command: [""]
-          args: ["node","seeds/seed.js"]
+          # env:
+          #   - name: DB_HOST
+          #     value: mongodb://mongo:27017/posts
+          # command: [""]
+          # args: ["node","seeds/seed.js"]
           imagePullPolicy: Always
 
 # Scale our app
