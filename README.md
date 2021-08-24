@@ -60,9 +60,10 @@ For your deployment to launch publicly we need create a `nginx_service.yml` to c
 ### `LoadBalancer`
 What is a load balancer?
 ## K8 commands
+- Always run `kubectl` to get the latest list of all the commands you can use!
 - `kubectl get [name of resource]`
   - `kubectl get avc`
   - `kubectl get node`
   - `kubectl get pods`
     - `kubectl describe pod`
-- `kubectl delete deployments nginx-deployment `
+- `kubectl delete deployments nginx-deployment`
