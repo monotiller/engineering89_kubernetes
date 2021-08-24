@@ -20,8 +20,8 @@ spec:
           env:
             - name: DB_HOST
               value: mongodb://mongo:27017/posts
-          # command: [""]
-          # args: ["node","seeds/seed.js"]
+          command: [""]
+          args: ["node","seeds/seed.js"]
           imagePullPolicy: Always
 
 # Scale our app
